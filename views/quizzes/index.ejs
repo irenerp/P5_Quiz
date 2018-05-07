@@ -1,20 +1,17 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Quizzes</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
-<h1>Quizzes existentes:</h1>
-<ol>
+<h1>Quizzes:</h1>
+<ul>
     <% for (var i in quizzes) {%>
     <% var quiz=quizzes[i] %>
     <li>
         <%= quiz.question%> : <%=quiz.answer %>
     </li>
     <% } %>
-</ol>
+</ul>
 </body>
 </html>
